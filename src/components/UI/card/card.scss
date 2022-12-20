@@ -1,0 +1,72 @@
+@import "../../../style/variables.scss";
+.main {
+    .card {
+        margin-top: 32px;
+        &__header {
+            font-size: 24px;
+            border: 1px solid $border;
+            padding: 5px 15px 5px 15px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: $main;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 6px;
+            background: $white;
+            border-radius: 6px;
+        }
+        &__downloads {
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid $border;
+            border-radius: 6px;
+            background: $white;
+            padding: 15px;
+            span {
+                font-size: 24px;
+                color: $main;
+            }
+            a {
+                text-decoration: none;
+                font-size: 20px;
+            }
+            ol {
+                li {
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            &__files {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .main {
+        .card {
+            margin-top: 16px;
+            &__header {
+                font-size: 18px;
+            }
+            &__downloads {
+                align-items: center;
+                flex-direction: column;
+                a {
+                    font-size: 16px;
+                }
+                span {
+                    font-size: 18px;
+                }
+                &__left {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}
