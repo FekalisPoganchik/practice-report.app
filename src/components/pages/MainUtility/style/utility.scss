@@ -1,0 +1,33 @@
+@import "../../../../style/variables.scss";
+.main__content {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $border;
+        border-radius: 6px;
+        background: $white;
+        margin-top: 32px;
+        padding: 32px 0 32px 0;
+        .utility_input {
+            background-color: $white;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .button {
+            padding: 5px 15px;
+            color: #008ec6;
+            font-size: 14px;
+            background: $white;
+            border: 1px solid #d7dfe3;
+            cursor: pointer;
+            margin-top: 5px;
+            &:hover {
+                opacity: 70%;
+            }
+        }
+    }
+}
