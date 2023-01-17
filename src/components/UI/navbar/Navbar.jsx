@@ -9,42 +9,42 @@ const Navbar = () => {
                 <NavLink
                     activeClassName={"nav-link-selected"}
                     className="link"
-                    to="/PracticeBES/build/main"
+                    to="/main"
                 >
                     Главная
                 </NavLink>
                 <NavLink
                     activeClassName={"nav-link-selected"}
                     className="link"
-                    to="/PracticeBES/build/firstkurs"
+                    to="/firstkurs"
                 >
                     1 курс
                 </NavLink>
                 <NavLink
                     activeClassName={"nav-link-selected"}
                     className="link"
-                    to="/PracticeBES/build/secondkurs"
+                    to="/secondkurs"
                 >
                     2 курс
                 </NavLink>
                 <NavLink
                     activeClassName={"nav-link-selected"}
                     className="link"
-                    to="/PracticeBES/build/thirdkurs"
+                    to="/thirdkurs"
                 >
                     3 курс
                 </NavLink>
                 <NavLink
                     activeClassName={"nav-link-selected"}
                     className="link"
-                    to="/PracticeBES/build/fourthkurs"
+                    to="/fourthkurs"
                 >
                     4 курс
                 </NavLink>
                 <NavLink
                     activeClassName={"nav-link-selected"}
                     className="link"
-                    to="/PracticeBES/build/utility"
+                    to="/utility"
                 >
                     Утилита
                 </NavLink>

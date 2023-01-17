@@ -1,4 +1,4 @@
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import MainPage from "./components/pages/Main/Main";
 
 import Navbar from "./components/UI/navbar/Navbar";
@@ -41,46 +41,46 @@ function App() {
     ];
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Navbar />
             <Switch>
-                <Route path="/PracticeBES/build/main">
+                <Route path="/main">
                     <MainPage finishTime={finishTime} />
                 </Route>
-                <Route path="/PracticeBES/build/firstkurs">
+                <Route path="/firstkurs">
                     <MainFirst
                         arrayFiles={arrayFiles}
                         finishTime={finishTime}
                     />
                 </Route>
-                <Route path="/PracticeBES/build/secondkurs">
+                <Route path="/secondkurs">
                     <MainSecond
                         arrayFiles={arrayFiles}
                         finishTime={finishTime}
                     />
                 </Route>
-                <Route path="/PracticeBES/build/thirdkurs">
+                <Route path="/thirdkurs">
                     <MainThird
                         arrayFiles={arrayFiles}
                         finishTime={finishTime}
                     />
                 </Route>
-                <Route path="/PracticeBES/build/fourthkurs">
+                <Route path="/fourthkurs">
                     <MainFourth
                         arrayFiles={arrayFiles}
                         finishTime={finishTime}
                     />
                 </Route>
-                <Route path="/PracticeBES/build/Utility">
+                <Route path="/utility">
                     <Utility
                         setFinishTime={setFinishTime}
                         finishTime={finishTime}
                     />
                 </Route>
-                <Redirect to={"/PracticeBES/build/main"} />
+                <Redirect to={"/main"} />
             </Switch>
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
